@@ -13,7 +13,7 @@ use DBD::Salesforce::dr;
 use DBD::Salesforce::db;
 use DBD::Salesforce::st;
 
-$VERSION = "0.03";    # $Date: 2006/02/14 16:54:03 $
+$VERSION = "0.04";    # $Date: 2006/02/14 16:54:03 $
 $REVISION = sprintf "%d.%02d", q$Revision: 1.1.1.1 $ =~ /(\d+)\.(\d+)/;
 
 # ----------------------------------------------------------------------
@@ -37,7 +37,7 @@ sub driver {
             'Err'               => \$err,
             'Errstr'            => \$errstr,
             'State'             => \$state,
-            'Attribution'       => 'DBD::Salesforce - jun shimizu <shimizu@shanon.co.jp>',
+            'Attribution'       => 'DBD::Salesforce - Jun Shimizu <bayside@cpan.org>',
             'AutoCommit'        => 1, # to avoid errors
         );
 

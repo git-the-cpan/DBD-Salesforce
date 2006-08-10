@@ -6,6 +6,7 @@ use ExtUtils::MakeMaker;
 
 my %PREREQ_PM = (
     'DBI'               => 1.39,
+    'SQL::Parser'       => 1.13,
     'HTML::Entities'    => 0,
     'Salesforce'        => 0.55,
     'Symbol'            => 0,
@@ -19,7 +20,7 @@ my %clean = (
 
 WriteMakefile(
     NAME        => "DBD::Salesforce",
-    VERSION     => "0.03",
+    VERSION     => "0.04",
     PREREQ_PM   => \%PREREQ_PM,
     clean       => \%clean,
 );
